@@ -78,10 +78,6 @@ input{
     border-radius: 5px;
     height: 25px;
 }
-input::placeholder{
-    color: black;
-    font-style: italic;
-}
 #more-text {
     width: 100%; 
     max-width: 100%; 

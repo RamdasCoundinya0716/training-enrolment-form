@@ -1,1 +1,3 @@
-document.getElementById("currentYear").textContent = new Date().getFullYear();
+document.getElementById("submit").onclick = () => {
+    alert("Form submitted successfully")
+}
