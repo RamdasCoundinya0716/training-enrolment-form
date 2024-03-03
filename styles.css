@@ -1,0 +1,120 @@
+/* Image setting */
+.background-image {
+    position: relative;
+    min-height: 100vh; /* Set a minimum height to fill the viewport */
+    overflow: hidden;
+}
+
+.background-image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('./assets/graphic-art-of-arnold-schwarzenegger-s5aglcvpaho0rdpx.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: blur(6px); 
+    z-index: -1; 
+    opacity: 70%;
+}
+
+.card {
+    position: fixed;
+    left: 510px;
+    top: 6px;
+    width: 500px;
+    margin: auto; 
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+body {
+    overflow-y: auto; /* Allow vertical scrolling */
+    margin: 0; 
+    padding: 0; 
+}
+
+/* Styling the form */
+hr {
+    width: 100%;
+    height: auto;
+    border: 1px solid black;
+    margin-top: 20px; /* Add margin at the top of the hr */
+    margin-bottom: 20px; /* Add margin at the bottom of the hr */
+}
+#title {
+    text-align: center;
+    color: black; /* Text color */
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+#description {
+    text-align: center;
+    color: black;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: oblique;
+}
+#enrol-form {
+    text-align: center;
+    color: black;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+input{
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 25px;
+}
+input::placeholder{
+    color: black;
+    font-style: italic;
+}
+#more-text {
+    width: 100%; 
+    max-width: 100%; 
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+/* Styling the submit button */
+/* Styling the submit button */
+#submit {
+    background-color: #4CAF50; 
+    color: white; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 15px;
+    display: inline-block; 
+    width: auto; 
+    text-align: center;
+    margin-top: 5px; 
+}
+
+#submit:hover {
+    background-color: #45a049; /* Darker green color on hover */
+}
+/* Footer styling */
+footer {
+    position: fixed; /* Fixed position to keep it at the bottom */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color:transparent; /* Translucent white background */
+    text-align: center; /* Center-align text */
+    font-size: 14px; /* Font size for copyright text */
+}

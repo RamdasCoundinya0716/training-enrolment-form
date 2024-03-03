@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="./index.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <div class="background-image">
+    <div class="overlay"></div>
+    <div class="content"></div>
+    <div class="card">
+      <h1 id='title'>Body Transformation Enrollment Form</h1>
+      <strong>
+        <em id=description>
+        <p>Thank you for taking time to fill this out form!</p>
+        <p>Let's get you into shape, Yeah BUDDY!!!</p>
+      </em>
+    </strong>
+    <hr>
+      <form id='enrol-form'>
+        <label for='name' id='name-label'>Full Name:
+          <input required type='text' id='name' placeholder='Enter your full name'>
+        </label>
+        <label for='email' id='email-label'>Email:
+          <input required type='email' id='email' placeholder='Enter your email id'>
+        </label>
+        <label for='number' id='number-label'>Phone Number:
+          <input type="number" min="1" max='9999999999' id='number' placeholder='Enter your Phone Number' style="width: 35%;">
+        </label>
+        <label for='age' id='age-label'>Age:
+          <input type="number" min="15" max='9999999999' id='number' placeholder='Enter your Age'>
+        </label>
+        <fieldset id="gender-label">
+          <legend>Gender:</legend>
+          <label for="radioOption1">
+            <input type="radio" id="radioOption1" name="radioGroup" value="option1"> Male
+          </label>
+          <label for="radioOption2">
+            <input type="radio" id="radioOption2" name="radioGroup" value="option2"> Female
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>Would you like to tell me anything more?</legend>
+          <label for="textarea">
+            <textarea id="more-text" name="additional-comments" placeholder="Enter additional comments" rows="4"></textarea>
+          </label>
+        </fieldset>
+        <button type='submit' id='submit'>Submit</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
+
+<!-- Refer to this sample form
+  https://survey-form.freecodecamp.rocks/
+-->
