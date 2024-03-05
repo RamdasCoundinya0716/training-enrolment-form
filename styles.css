@@ -1,3 +1,9 @@
+@media(max-width: 600px){
+    .body{
+        color: black;
+    }
+}
+
 /* Image setting */
 .background-image {
     position: relative;
